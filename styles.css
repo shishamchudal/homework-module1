@@ -148,78 +148,79 @@ footer #nondisclaimer .social .fa-instagram {
 
 /* Activities */
 table {
-    width: 1000px;
-    margin: 4em auto 0 auto;
+  width: 1000px;
+  margin: 4em auto 0 auto;
 }
 caption {
-    background: #852b1b;
-    height: 40px;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding-top: 1em;
+  background: #852b1b;
+  height: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
 }
 thead {
-    background-color: #bde1ff;
+  background-color: #bde1ff;
 }
 tbody {
-    background-color: #eeffe6;
-    text-align: center;
+  background-color: #eeffe6;
+  text-align: center;
 }
-th,td {
-    width: 225px;
-    height: 75px;
-    vertical-align: middle;
-    border: solid 1px #852b1b;
+th,
+td {
+  width: 225px;
+  height: 75px;
+  vertical-align: middle;
+  border: solid 1px #852b1b;
 }
 th:first-child {
-    width: 125px;
-    height: 50ox;
-    background: #4977d1;
-    color: #fff;
+  width: 125px;
+  height: 50ox;
+  background: #4977d1;
+  color: #fff;
 }
 td:first-child {
-    font-weight: bold;
-    background: #bde1ff;
+  font-weight: bold;
+  background: #bde1ff;
 }
 
 /* Contact */
 h1 {
-    color: #9ed034;
+  color: #9ed034;
 }
 form {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 fieldset {
-    border-color: #9ed034;;
+  border-color: #9ed034;
 }
 fieldset legend {
-    text-transform: uppercase;
-    color: #4977d1
+  text-transform: uppercase;
+  color: #4977d1;
 }
 label {
-    display: block;
-    margin: 15px 0 0 0;
+  display: block;
+  margin: 15px 0 0 0;
 }
 input {
-    width: 400px;
+  width: 400px;
 }
 input[type="radio"] {
-    width: 25px;
+  width: 25px;
 }
 textarea {
-    width: 400px;
-    height: 100px;
+  width: 400px;
+  height: 100px;
 }
 input[type="submit"] {
-    display: block;
-    margin: 20px 0 10px 0;
-    width: 150px;
-    height: 40px;
-    background: #4977d1;
-    color: #fff;
-    border: none;
-    margin-left: 250px;
+  display: block;
+  margin: 20px 0 10px 0;
+  width: 150px;
+  height: 40px;
+  background: #4977d1;
+  color: #fff;
+  border: none;
+  margin-left: 250px;
 }
 
 /* Cliffs */
@@ -258,4 +259,23 @@ input[type="submit"] {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Home */
+#timeofday {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #3a3a3a;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
+}
+
+#timeofday span {
+  color: #125688;
+  font-weight: bold;
 }
