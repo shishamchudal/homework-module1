@@ -84,8 +84,13 @@
               <textarea></textarea>
             </div>
 
+            <div class="captcha-container">
+              <input type="text" class="captcha-input" placeholder="Enter characters">
+              <div class="captcha-box" id="codes"></div>
+          </div>
+
             <div class="button">
-              <input type="submit" value="Inquire" />
+              <input id="submit" type="submit" value="Inquire" />
             </div>
           </fieldset>
         </form>
@@ -148,5 +153,8 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="js/randomcodes.js"></script>
   </body>
 </html>

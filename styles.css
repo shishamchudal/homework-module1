@@ -217,10 +217,34 @@ input[type="submit"] {
   margin: 20px 0 10px 0;
   width: 150px;
   height: 40px;
-  background: #4977d1;
+  /* background: #4977d1; */
   color: #fff;
   border: none;
   margin-left: 250px;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.captcha-input {
+  width: 50%; /* Adjust percentage as needed */
+  min-width: 150px;
+  max-width: 250px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.captcha-box {
+  background: #ccc;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 /* Cliffs */
