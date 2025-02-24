@@ -252,14 +252,14 @@ input[type="submit"] {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding: 50px;
-  overflow: hidden;
+  padding: 50px 20px; /* Added side padding to prevent overflow */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  box-sizing: border-box; /* Ensures padding doesn't add extra width */
 }
 
 .cliff {
-  width: 48%;
-  margin: 1%;
-  float: left;
   background-color: #fff;
   overflow: hidden;
 }
@@ -280,11 +280,12 @@ input[type="submit"] {
   text-align: center;
 }
 
-.cliffs-container::after {
-  content: "";
-  display: table;
-  clear: both;
+@media (max-width: 439px) {
+  .cliffs-container {
+    grid-template-columns: 1fr; /* Ensures single column on very small screens */
+  }
 }
+
 
 /* Home */
 #timeofday {
