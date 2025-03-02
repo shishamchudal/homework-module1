@@ -213,7 +213,25 @@
           </p>
         </div>
       </footer>
+    </div><!-- Bootstrap Modal -->
+    <div class="modal fade" id="activityModal" tabindex="-1" aria-labelledby="activityModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="activityModalLabel">Selected Activities</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="selectedActivities"></div>
+          </div>
+          <div class="modal-footer">
+            <input type="email" class="form-control" placeholder="johndoe@gmail.com" id="userEmail">
+            <button class="btn btn-primary">Get Info</button>
+          </div>
+        </div>
+      </div>
     </div>
+    
     <script src="js/activity.js"></script>
   </body>
 </html>
