@@ -193,6 +193,8 @@ h1 {
 }
 form {
   margin-top: 1em;
+  border: 1px solid #9ed034;
+  padding: 1em;
 }
 fieldset {
   border-color: #9ed034;
@@ -209,7 +211,7 @@ input {
   width: 400px;
 }
 input[type="radio"] {
-  width: 25px;
+  /* width: 25px; */
 }
 textarea {
   width: 400px;
@@ -249,7 +251,6 @@ input[type="submit"] {
   font-weight: bold;
   border-radius: 5px;
 }
-
 /* Cliffs */
 .cliffs-container {
   max-width: 1200px;

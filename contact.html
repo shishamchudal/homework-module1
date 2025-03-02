@@ -46,68 +46,126 @@
           </div>
           <nav class="navbar navbar-expand-lg justify-content-end main-menu">
             <div class="">
-              <button class="navbar-toggler ms-auto" style="margin-top: 25px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button
+                class="navbar-toggler ms-auto"
+                style="margin-top: 25px"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
-                  <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cliffs.html">Cliffs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="activities.html">Activities</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
                 </ul>
               </div>
             </div>
           </nav>
         </div>
-        
       </header>
-      <main>
-        <h1>Contacting Us</h1>
-        <p>
-          You can drop by the visitors information center at the cliff site that
-          you plan on visiting. They are open 7 days a week from 8.00AM to
-          5.00PM. You can also contact us directly if you need additional
-          information about the Cliffs, Hours of Operations, Facilities or
-          questions about this site using one of the following:
+      <main class="container">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <p class="text-center text-muted">
+          Visit our visitor center at the cliff site you plan to visit. We are
+          open daily from 8:00 AM to 5:00 PM. Contact us for more details:
         </p>
 
-        <div class="contactinfo">
-          <div class="phone">
-            <span>Phone:</span>
-            <span>(800)GCLIFFS</span>
+        <!-- Contact Info -->
+        <div class="contactinfo p-3 mb-4">
+          <div class="col-6">
+            <strong>Phone:</strong> (800) GCLIFFS
           </div>
-          <div class="email">
-            <span>Email:</span>
-            <span>info@greatcliffs.com</span>
+          <div class="col-6">
+            <strong>Email:</strong> info@greatcliffs.com
           </div>
         </div>
 
-        <form action="/contact" method="post">
+        <!-- Contact Form -->
+        <form action="/contact" method="post" class="container row g-3">
           <fieldset>
-            <legend>Contact Form</legend>
-            <div class="textbox">
-              <label>Name:</label>
-              <input type="text" name="name" placeholder="John Doe" />
-              <label>Email:</label>
+            <legend class="text-center fw-bold mb-3">Contact Form</legend>
+
+            <div class="col-12">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email:</label>
               <input
                 type="email"
+                id="email"
                 name="email"
+                class="form-control"
                 placeholder="johndoe@gmail.com"
+                required
               />
-              <label>Phone:</label>
-              <input type="text" name="phone" placeholder="xxx-xxx-xxxx" />
             </div>
 
-            <div class="radios">
-              <label>How should we contact you?</label>
-              <input type="radio" name="contact" value="email" checked />Email
-              <input type="radio" name="contact" value="phone" />Phone
+            <div class="col-12">
+              <label for="phone" class="form-label">Phone:</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="xxx-xxx-xxxx"
+                required
+              />
             </div>
 
-            <div class="selectmenu">
-              <label>Which Cliff are you inquiring?</label>
-              <select>
+            <div class="col-12">
+              <label class="form-label">Preferred Contact Method:</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="contact"
+                  value="email"
+                  id="contactEmail"
+                  checked
+                />
+                <label class="form-check-label" for="contactEmail">Email</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="contact"
+                  value="phone"
+                  id="contactPhone"
+                />
+                <label class="form-check-label" for="contactPhone">Phone</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="cliff" class="form-label"
+                >Which Cliff are you inquiring about?</label
+              >
+              <select id="cliff" name="cliff" class="form-select">
                 <option>West Cliff</option>
                 <option>North Cliff</option>
                 <option>East Cliff</option>
@@ -115,63 +173,82 @@
               </select>
             </div>
 
-            <div class="commentbox">
-              <label>How did you hear about us:</label>
-              <textarea></textarea>
+            <div class="col-12">
+              <label for="comment" class="form-label"
+                >How did you hear about us?</label
+              >
+              <textarea
+                id="comment"
+                name="comment"
+                class="form-control"
+                rows="3"
+              ></textarea>
             </div>
 
-            <div class="captcha-container">
-              <input type="text" class="captcha-input" id="codeentered" placeholder="Enter characters">
-              <div class="captcha-box" id="codes"></div>
-          </div>
+            <!-- CAPTCHA -->
+            <div
+              class="col-12 d-flex justify-content-between align-items-center"
+            >
+              <input
+                type="text"
+                class="form-control me-2"
+                id="codeentered"
+                placeholder="Enter characters"
+              />
+              <div class="captcha-box" id="codes">X7A9B</div>
+            </div>
 
-            <div class="button">
-              <input id="submit" type="submit" value="Inquire" />
+            <!-- Submit Button -->
+            <div class="col-12 text-center mt-3">
+              <button type="submit" class="btn btn-primary w-100">
+                Inquire
+              </button>
             </div>
           </fieldset>
         </form>
       </main>
+
       <section class="container-fluid">
         <div class="row">
-        <ul id="partners" class="list-unstyled text-center">
-          <li class="partner mb-3">
-            <img
-              src="images/partners/partner-bustour.png"
-              alt="Partner Bus Tours"
-            />
-          </li>
-          <li class="partner mb-3">
-            <img
-              src="images/partners/partner-cabinrental.png"
-              alt="Partner Cabin Rental"
-            />
-          </li>
-          <li class="partner mb-3">
-            <img
-              src="images/partners/partner-campingadv.png"
-              alt="Partner Camping Adventure"
-            />
-          </li>
-          <li class="partner mb-3">
-            <img
-              src="images/partners/partner-collegetours.png"
-              alt="Partner College Tours"
-            />
-          </li>
-          <li class="partner mb-3">
-            <img
-              src="images/partners/partner-rentalbike.png"
-              alt="Partner Bike Rentals"
-            />
-          </li>
-          <li class="partner mb-3">
-            <img
-              src="images/partners/partner-tourgroup.png"
-              alt="Partner Tour Group"
-            />
-          </li>
-        </ul>
-      </div>
+          <ul id="partners" class="list-unstyled text-center">
+            <li class="partner mb-3">
+              <img
+                src="images/partners/partner-bustour.png"
+                alt="Partner Bus Tours"
+              />
+            </li>
+            <li class="partner mb-3">
+              <img
+                src="images/partners/partner-cabinrental.png"
+                alt="Partner Cabin Rental"
+              />
+            </li>
+            <li class="partner mb-3">
+              <img
+                src="images/partners/partner-campingadv.png"
+                alt="Partner Camping Adventure"
+              />
+            </li>
+            <li class="partner mb-3">
+              <img
+                src="images/partners/partner-collegetours.png"
+                alt="Partner College Tours"
+              />
+            </li>
+            <li class="partner mb-3">
+              <img
+                src="images/partners/partner-rentalbike.png"
+                alt="Partner Bike Rentals"
+              />
+            </li>
+            <li class="partner mb-3">
+              <img
+                src="images/partners/partner-tourgroup.png"
+                alt="Partner Tour Group"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <footer>
         <div id="nondisclaimer">
@@ -191,7 +268,6 @@
         </div>
       </footer>
     </div>
-
 
     <script src="js/randomcodes.js"></script>
   </body>
